@@ -1,7 +1,0 @@
-.git
-__pycache__
-*.pyc
-*.ipynb
-screenshots
-log.txt
-README.md
