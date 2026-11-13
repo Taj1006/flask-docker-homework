@@ -1,0 +1,17 @@
+$ docker compose logs --no-color web_app
+web_app-1  |  * Serving Flask app 'app'
+web_app-1  |  * Debug mode: off
+web_app-1  | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+web_app-1  |  * Running on all addresses (0.0.0.0)
+web_app-1  |  * Running on http://127.0.0.1:5000
+web_app-1  |  * Running on http://172.18.0.2:5000
+web_app-1  | [33mPress CTRL+C to quit[0m
+web_app-1  | 172.18.0.1 - - [13/Nov/2026 07:23:06] "GET / HTTP/1.1" 200 -
+web_app-1  | 172.18.0.1 - - [13/Nov/2026 07:23:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+web_app-1  | 172.18.0.1 - - [13/Nov/2026 07:23:06] "POST / HTTP/1.1" 200 -
+web_app-1  | 172.18.0.1 - - [13/Nov/2026 07:23:06] "POST / HTTP/1.1" 200 -
+web_app-1  | 172.18.0.1 - - [13/Nov/2026 07:23:06] "[31m[1mPOST / HTTP/1.1[0m" 400 -
+
+$ docker compose exec -T web_app cat /app/log.txt
+สวัสดีครับ ทดสอบส่งข้อความผ่าน Flask และบันทึก log ใน Docker
+ข้อความที่สอง: ทดสอบ append <script>alert(1)</script>

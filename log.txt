@@ -1,0 +1,2 @@
+สวัสดีครับ ทดสอบส่งข้อความผ่าน Flask และบันทึก log ใน Docker
+ข้อความที่สอง: ทดสอบ append <script>alert(1)</script>
